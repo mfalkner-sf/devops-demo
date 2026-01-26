@@ -1,0 +1,47 @@
+/* Minimal styling; prefer SLDS utilities where possible */
+/* Patch note: initial CSS patch for avatar sizing and table spacing */
+.contact-avatar {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: var(--lwc-shadowDropDown, 0 2px 4px rgba(0, 0, 0, 0.16));
+  border: 3px solid white;
+}
+
+:host {
+  display: block;
+}
+
+/* Slight top spacing for the datatable area to breathe */
+.slds-page-header + template,
+.slds-page-header + lightning-datatable {
+  margin-top: 0.5rem;
+}
+
+/* Fix vertical alignment of badges in datatable status column */
+.slds-table_cell-buffer .slds-badge {
+  vertical-align: middle !important;
+  line-height: 1.5;
+  padding: 0.25rem 0.5rem;
+  position: relative;
+  top: 4;
+  left: 2px;
+}
+
+/* Ensure proper vertical alignment within table cells */
+.lightning-datatable .slds-badge {
+  vertical-align: middle !important;
+  position: relative;
+  top: 4px;
+  left: 2px;
+}
+
+/* Improve image loading and display */
+.contact-avatar {
+  background-color: #f3f2f2;
+  background-image: url("/resource/IMG_7208");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

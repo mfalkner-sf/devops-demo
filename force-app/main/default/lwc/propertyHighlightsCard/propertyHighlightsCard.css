@@ -1,0 +1,6 @@
+/* Custom badge variant for On Hold to use brand blue #003594 */
+.badge--on-hold {
+  background-color: #003594 !important;
+  color: var(--lwc-brandHeader, #ffffff) !important;
+  border-color: #003594 !important;
+}
