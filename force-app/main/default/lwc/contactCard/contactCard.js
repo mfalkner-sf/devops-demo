@@ -46,7 +46,7 @@ export default class ContactCard extends LightningElement {
   // Column configuration for lightning-datatable
   columns = [
     { label: "Property Name", fieldName: "name", type: "text" },
-    { label: "VMS ID", fieldName: "vmsId", type: "text" },
+    { label: "VMS Number", fieldName: "vmsId", type: "text" },
     { label: "Open Cases", fieldName: "openCases", type: "number" },
     {
       label: "Action",

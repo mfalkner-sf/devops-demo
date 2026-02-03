@@ -42,7 +42,7 @@ describe("c-contact-card", () => {
     document.body.appendChild(element);
 
     const datatable = element.shadowRoot.querySelector("lightning-datatable");
-    const expectedColumns = ["Property Name", "VMS ID", "Open Cases", "Action"];
+    const expectedColumns = ["Property Name", "VMS Number", "Open Cases", "Action"];
     const actualColumns = datatable.columns.map((col) => col.label);
     expect(actualColumns).toEqual(expectedColumns);
   });

@@ -13,15 +13,7 @@ const COLUMNS = [
       target: "_blank"
     }
   },
-  {
-    label: "Status",
-    fieldName: "status",
-    type: "text",
-    cellAttributes: {
-      class: { fieldName: "statusClass" }
-    }
-  },
-  { label: "VMS ID", fieldName: "vmsId", type: "text" },
+  { label: "VMS Number", fieldName: "vmsId", type: "text" },
   { label: "Open Cases", fieldName: "openCases", type: "number" },
   {
     type: "action",
